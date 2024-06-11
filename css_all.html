@@ -117,6 +117,18 @@
         .div_padding{
             padding:10px;
         }
+        /* display顯示 */
+        /* 不自動換行(寬度隨內容物) */
+        .display1{
+            display: inline;
+        }
+        /* 自動換行(寬度拉滿) */
+        .display2{
+            display: block;
+        }
+        .display3{
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -158,5 +170,22 @@
     <div class="div_border div_padding">
         padding留白
     </div>
+    <br>
+    <div class="display1">display1</div>
+    <div class="display1">display2</div>
+    <br>
+    <span class="display2">span1</span>
+    <span class="display2">span2</span>
+    <br>
+    <div class="display3" style="width:100px">inline-block1</div>
+    <div class="display3">inline-block2</div>
+    <br>
+    <span>span1</span>
+    <span style="display: none;">span2</span>
+    <span>span3</span>
+    <br>
+    <span>span4</span>
+    <span style="visibility: hidden;">span5</span>
+    <span>span6</span>
 </body>
 </html>
